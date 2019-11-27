@@ -38,17 +38,17 @@
                 </div>
                 <!-- Mars Weather -->
                 <div class="col-lg-4 col-md-4 col-sm-12" id="mars-weather">
-                    <div class="alert alert-success" role="alert">
+                    <div class="card" style="max-width: 18rem;">
                         <div class="card-body text-white bg-danger">
-                            <h4 class="alert-heading">Current Weather on Mars</h4>
-                            <p class="mb-0">{{mars.weather}}</p>
+                            <h4 class="card-title">Current Weather on Mars</h4>
+                            <p class="card-text">{{mars.weather}}</p>
                         </div>
                     </div>
                     <!-- Mars Facts -->
                     <br>
-                    <div class="col-md-12" id="mars-facts">
-                        <div class="alert alert-success" role="alert">
-                            <h4 class="alert-heading" style="color: black">Mars Facts</h4>
+                    <div class="row" id="mars-facts">
+                        <div class="col-md-12" style="color: white">
+                            <h4 style="color: white">Mars Facts</h4>
                             {{mars.facts | safe}}
                         </div>
                     </div>
